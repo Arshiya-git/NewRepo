@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        
+        .container h2 {
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        .form-group .buttons {
+            text-align: center; /* Center the buttons */
+        }
+
+        .form-group button {
+            display: inline-block; /* Align buttons inline */
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin: 0 5px; /* Add margin between buttons */
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            margin-top: -15px;
+        }
+
+        .company-info {
+            margin-left: 10px;
+            text-align: left;
+        }
+
+        .back-button {
+            background-color: #ccc;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img class="logo" src="https://png.pngtree.com/template/20190313/ourmid/pngtree-protection-insurance-logo-image_66873.jpg" alt="" width="75" height="50">
+            <div class="company-info">
+                <h1 style="margin-right: 5px; margin-top: 5px;">ASPL</h1>
+                <h5 style="margin-right: 5px; margin-top: -15px;">Azti Solutions Private Limited</h5>
+            </div>
+        </div>
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+            <div class="form-group buttons"> <!-- Added a container for the buttons -->
+			<button type="button" onclick="redirectToIndex()">Login</button>
+			<button type="button" onclick="redirectToIndex()">Back</button>
+		</div>
+
+		<script>
+			function redirectToIndex() {
+				window.location.href = 'index.html';
+			}
+		</script>
+
+        </form>
+    </div>
+</body>
+</html>
